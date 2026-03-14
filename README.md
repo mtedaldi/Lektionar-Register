@@ -6,8 +6,6 @@ Durchsuchbares Schriftstellenregister für die deutschen Messlektionare (Bände 
 
 👉 [Live-Version auf GitHub Pages](https://mtedaldi.github.io/Lektionar-Register/)
 
-*(Link nach Aktivierung von GitHub Pages eintragen)*
-
 ## Features
 
 - Bandübergreifende Suche nach Bibelstellen
