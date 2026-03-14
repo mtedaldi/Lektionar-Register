@@ -4,7 +4,7 @@ Durchsuchbares Schriftstellenregister für die deutschen Messlektionare (Bände 
 
 ## Demo
 
-👉 [Live-Version auf GitHub Pages](https://mtedaldi.github.io/lektionar-register)
+👉 [Live-Version auf GitHub Pages](https://DEINNAME.github.io/lektionar-register)
 
 *(Link nach Aktivierung von GitHub Pages eintragen)*
 
@@ -85,3 +85,16 @@ von der Originalquelle tun.
 ## Mitwirken
 
 Fehler, Verbesserungsvorschläge oder Ergänzungen gerne als Issue oder Pull Request.
+
+## Entstehung
+
+Dieses Tool wurde in Zusammenarbeit mit [Claude](https://claude.ai) (Anthropic) entwickelt.
+Die Idee, die fachlichen Anforderungen, das Testen und alle inhaltlichen Entscheidungen
+stammen vom Autor – Claude hat den Code geschrieben und technische Lösungsvorschläge
+erarbeitet.
+
+Der Entwicklungsprozess war iterativ: Anforderung → Umsetzung → Test → Feedback →
+nächste Iteration. Wer sich für diesen Ansatz interessiert: der Entstehungsprozess ist
+im Wesentlichen in der Konversationsgeschichte dokumentiert.
+
+KI-gestützte Entwicklung wird hier bewusst transparent gemacht.
