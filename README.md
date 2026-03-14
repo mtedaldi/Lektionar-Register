@@ -4,7 +4,7 @@ Durchsuchbares Schriftstellenregister für die deutschen Messlektionare (Bände 
 
 ## Demo
 
-👉 [Live-Version auf GitHub Pages](https://DEINNAME.github.io/lektionar-register)
+👉 [Live-Version auf GitHub Pages](https://mtedaldi.github.io/lektionar-register)
 
 *(Link nach Aktivierung von GitHub Pages eintragen)*
 
