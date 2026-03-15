@@ -2,7 +2,6 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI2IiBmaWxsPSIjOGIyYTJhIi8+CiAgPHBhdGggZD0iTTUgOCBRNSA3IDYgNyBMMTUgNy41IEwxNSAyNSBMNiAyNC41IFE1IDI0LjUgNSAyMy41IFoiIGZpbGw9IiNmNWYwZTgiIHN0cm9rZT0iI2M4YTg4MiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KICA8cGF0aCBkPSJNMjcgOCBRMjcgNyAyNiA3IEwxNyA3LjUgTDE3IDI1IEwyNiAyNC41IFEyNyAyNC41IDI3IDIzLjUgWiIgZmlsbD0iI2Y1ZjBlOCIgc3Ryb2tlPSIjYzhhODgyIiBzdHJva2Utd2lkdGg9IjAuNSIvPgogIDxwYXRoIGQ9Ik0xNSA3LjUgUTE2IDcgMTcgNy41IEwxNyAyNSBRMTYgMjUuNSAxNSAyNSBaIiBmaWxsPSIjYzhhMDMwIiBvcGFjaXR5PSIwLjkiLz4KICA8bGluZSB4MT0iNyIgeTE9IjExIiB4Mj0iMTQiIHkyPSIxMS4yIiBzdHJva2U9IiNjOGE4ODIiIHN0cm9rZS13aWR0aD0iMC42IiBvcGFjaXR5PSIwLjUiLz4KICA8bGluZSB4MT0iNyIgeTE9IjEzLjUiIHgyPSIxNCIgeTI9IjEzLjciIHN0cm9rZT0iI2M4YTg4MiIgc3Ryb2tlLXdpZHRoPSIwLjYiIG9wYWNpdHk9IjAuNSIvPgogIDxsaW5lIHgxPSI3IiB5MT0iMTYiIHgyPSIxNCIgeTI9IjE2LjIiIHN0cm9rZT0iI2M4YTg4MiIgc3Ryb2tlLXdpZHRoPSIwLjYiIG9wYWNpdHk9IjAuNSIvPgogIDxsaW5lIHgxPSI3IiB5MT0iMTguNSIgeDI9IjE0IiB5Mj0iMTguNyIgc3Ryb2tlPSIjYzhhODgyIiBzdHJva2Utd2lkdGg9IjAuNiIgb3BhY2l0eT0iMC41Ii8+CiAgPGxpbmUgeDE9IjciIHkxPSIyMSIgeDI9IjEyIiB5Mj0iMjEuMSIgc3Ryb2tlPSIjYzhhODgyIiBzdHJva2Utd2lkdGg9IjAuNiIgb3BhY2l0eT0iMC41Ii8+CiAgPGxpbmUgeDE9IjE4IiB5MT0iMTEiIHgyPSIyNSIgeTI9IjExLjIiIHN0cm9rZT0iI2M4YTg4MiIgc3Ryb2tlLXdpZHRoPSIwLjYiIG9wYWNpdHk9IjAuNSIvPgogIDxsaW5lIHgxPSIxOCIgeTE9IjEzLjUiIHgyPSIyNSIgeTI9IjEzLjciIHN0cm9rZT0iI2M4YTg4MiIgc3Ryb2tlLXdpZHRoPSIwLjYiIG9wYWNpdHk9IjAuNSIvPgogIDxsaW5lIHgxPSIxOCIgeTE9IjE2IiB4Mj0iMjUiIHkyPSIxNi4yIiBzdHJva2U9IiNjOGE4ODIiIHN0cm9rZS13aWR0aD0iMC42IiBvcGFjaXR5PSIwLjUiLz4KICA8bGluZSB4MT0iMTgiIHkxPSIxOC41IiB4Mj0iMjUiIHkyPSIxOC43IiBzdHJva2U9IiNjOGE4ODIiIHN0cm9rZS13aWR0aD0iMC42IiBvcGFjaXR5PSIwLjUiLz4KICA8bGluZSB4MT0iMTgiIHkxPSIyMSIgeDI9IjIzIiB5Mj0iMjEuMSIgc3Ryb2tlPSIjYzhhODgyIiBzdHJva2Utd2lkdGg9IjAuNiIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPg==" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lektionar-Register</title>
 <style>
@@ -356,7 +355,40 @@
     background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
     padding: 0.2rem 0.6rem; border-radius: 2px; letter-spacing: 0.05em;
     flex-shrink: 0; align-self: center;
+    cursor: pointer;
+    text-decoration: underline dotted rgba(255,255,255,0.5);
+    text-underline-offset: 3px;
+    transition: background 0.15s;
   }
+  .version-badge:hover { background: rgba(255,255,255,0.25); }
+
+  /* Info-Modal */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6); z-index: 100;
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 2rem; max-width: 480px; width: 90%;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.3); position: relative;
+  }
+  .modal h2 {
+    font-size: 1.1rem; font-weight: 600; color: var(--accent);
+    margin-bottom: 1.2rem; letter-spacing: 0.02em;
+  }
+  .modal p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0.75rem; line-height: 1.6; }
+  .modal a { color: var(--accent); text-decoration: underline; }
+  .modal a:hover { color: var(--accent-hover); }
+  .modal hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
+  .modal-close {
+    position: absolute; top: 0.75rem; right: 1rem;
+    background: none; border: none; font-size: 1.4rem;
+    color: var(--text-muted); cursor: pointer; line-height: 1;
+    padding: 0.2rem 0.4rem; border-radius: 3px;
+  }
+  .modal-close:hover { background: var(--tag-bg); color: var(--text); }
 
   /* ── Tabs ── */
   .tabs {
@@ -509,7 +541,7 @@
       <h1>Lektionar-Register</h1>
       <p>Bandübergreifendes Schriftstellenverzeichnis</p>
     </div>
-    <div class="version-badge">v0.5</div>
+    <div class="version-badge" title="Über dieses Tool" onclick="document.getElementById('info-modal').classList.add('open')">v0.5</div>
   </div>
   <div class="tabs">
     <button class="tab active" onclick="wechselTab('1982')" id="tab-1982">
@@ -573,6 +605,31 @@
   </div>
   <div id="output"></div>
 </main>
+
+<!-- Info-Modal -->
+<div class="modal-overlay" id="info-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('info-modal').classList.remove('open')" title="Schliessen">×</button>
+    <h2>Lektionar-Register</h2>
+    <p>Bandübergreifendes Schriftstellenverzeichnis für die deutschen Messlektionare (Bände I–VIII). Ermöglicht die Suche nach Bibelstellen über alle Bände hinweg, mit Unterstützung der liturgischen Perikopen-Notation.</p>
+    <hr>
+    <p><strong>Datenquellen</strong><br>
+    1982 ff. (EÜ 1980): © Deutsches Liturgisches Institut, Trier –
+    <a href="https://dli.institute/wp/praxis/schriftstellenverzeichnis-fuer-die-lesungen-der-messe/" target="_blank">dli.institute</a><br>
+    2018 ff. (EÜ 2016): Klärung mit DLI in Vorbereitung</p>
+    <p><strong>Urheberrecht</strong><br>
+    Die liturgischen Daten sind © DLI. Verwendung ausschliesslich für nicht-kommerzielle, liturgische Zwecke.</p>
+    <hr>
+    <p><strong>Entstehung</strong><br>
+    Entwickelt von Marco Tedaldi in Zusammenarbeit mit
+    <a href="https://claude.ai" target="_blank">Claude</a> (Anthropic).
+    KI-gestützte Entwicklung wird hier bewusst transparent gemacht.</p>
+    <p><strong>Quellcode</strong><br>
+    <a href="https://github.com/mtedaldi/Lektionar-Register" target="_blank">github.com/mtedaldi/Lektionar-Register</a></p>
+    <hr>
+    <p style="font-family: monospace; font-size: 0.8rem; color: var(--text-muted)">v0.5 · März 2026</p>
+  </div>
+</div>
 
 <footer>Lektionar-Register v0.5 · Sakristei-Tool</footer>
 
